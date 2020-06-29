@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+}
+
+#particles-js {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('images/slide.jpg');
+
+  /* Full height */
+  height: 25%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
