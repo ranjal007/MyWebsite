@@ -2,22 +2,250 @@ body {
   margin: 0;
 }
 
+div.scroll { 
+  width:100%;
+  height: 550px;
+  border:solid 0px;
+  overflow:scroll;
+  overflow-x:hidden;
+  overflow-y:scroll;
+} 
+
+.imgwecause {
+width: 33%;
+height: 30%;
+display: inline;
+align-items: initial;
+}
+
+.imgovuli {
+  width: 20%;
+  height: 20%;
+  margin-left: 3%;
+  display: inline;
+  align-items: initial;
+  }
+
+.wecause {
+  background: linear-gradient(135deg,#ffd000,#ff9725);
+}
+
+.design {
+  background: linear-gradient(135deg,#df9a86,#b63862);
+}
+
 #particles-js {
   position: absolute;
   height: 100%;
   width: 100%;
 }
 
+.intro {
+  width: 30%;
+  position: relative;
+  animation: 1.5s linear 0s infinite normal pulse;
+}
+  
+@keyframes pulse {
+    0%{
+      transform: scale(.9)}
+    100%{
+      transform: scale(1.0);}
+}
+
+/*
+.parallax {
+
+  background-image: url('images/vectors.png');
+  background-color: rgba(2, 2, 2, 0.726);
+  
+  height: 25%;
+
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+*/
+
 .parallax {
   /* The image used */
-  background-image: url('images/slide.jpg');
+  background-image: url('images/mandala.jpg');
 
   /* Full height */
-  height: 25%; 
+  height: 30%; 
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+
+#myimages1 {
+  animation-name: jiggle;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+}
+
+#myimages2 {
+  animation-name: jiggle;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+}
+#myimages3 {
+  animation-name: jiggle;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+}
+#myimages4 {
+  animation-name: jiggle;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+}
+
+@keyframes jiggle{
+1%{
+  transform: translate(0px, 0px) rotate(0deg)}
+5%{
+  transform: translate(1px, -1px) rotate(-1deg)}
+10%{
+  transform: translate(2px, -2px) rotate(0deg)}
+15%{
+  transform: translate(3px, -3px) rotate(1deg)}
+20%{
+  transform: translate(2px, -2px) rotate(0deg)}
+25%{
+  transform: translate(1px, -1px) rotate(-1deg)}
+30%{
+  transform: translate(0px, 0px) rotate(0deg)}
+35%{
+  transform: translate(-1px, 1px) rotate(1deg)}
+40%{
+  transform: translate(-2px, 2px) rotate(0deg)}
+45%{
+  transform: translate(-3px, 3px) rotate(-1deg)}
+50%{
+  transform: translate(-2px, 2px) rotate(1deg)}
+55%{
+  transform: translate(-1px, 1px) rotate(1deg)}
+60%{
+  transform: translate(0px, 0px) rotate(0deg)}
+}
+
+@keyframes slide {
+  50% {
+    font-size: 3rem;
+    letter-spacing: 3px;
+  }
+  to {
+    font-size: 1rem;
+    letter-spacing: 0;
+  }
+}
+
+.typing-slider p {
+  position: relative;
+  display: inline;
+  font-size: 0;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  animation: slide 15s steps(5) infinite;
+}
+
+#loader-wrapper {
+  background-color: black;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+#loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #3498db;
+  -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+  animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+#loader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #e74c3c;
+  -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+#loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #f9c922;
+  -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+@-webkit-keyframes spin {
+  0%   {
+      -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+      -ms-transform: rotate(0deg);  /* IE 9 */
+      transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+  }
+  100% {
+      -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+      -ms-transform: rotate(360deg);  /* IE 9 */
+      transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+  }
+}
+@keyframes spin {
+  0%   {
+      -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+      -ms-transform: rotate(0deg);  /* IE 9 */
+      transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+  }
+  100% {
+      -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+      -ms-transform: rotate(360deg);  /* IE 9 */
+      transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+  }
+}
+
+
+.logo {
+  position:absolute;
+  top:calc(50% + 85px);
+  left:calc(50% - 55px);
+  
+  font-family:sans-serif;
+  color:gray;
+  letter-spacing:0.1em;
 }
