@@ -24,8 +24,21 @@ align-items: initial;
   margin-left: 3%;
   display: inline;
   align-items: initial;
-  }
+}
 
+.imgspotify {
+  width: 19%;
+  height: 20%;
+  display: inline;
+  align-items: initial;
+}
+
+.imgdesign {
+  width: 40%;
+  height: 35%;
+  display: inline;
+  align-items: initial;
+}
 .wecause {
   background: linear-gradient(135deg,#ffd000,#ff9725);
 }
@@ -53,7 +66,7 @@ align-items: initial;
       transform: scale(1.0);}
 }
 
-/*
+
 .parallax {
 
   background-image: url('images/vectors.png');
@@ -65,22 +78,22 @@ align-items: initial;
   background-attachment: fixed;
   background-position: center;
 }
-*/
 
+/*
 .parallax {
-  /* The image used */
+  /* The image used 
   background-image: url('images/mandala.jpg');
 
-  /* Full height */
+  /* Full height 
   height: 30%; 
 
-  /* Create the parallax scrolling effect */
+  /* Create the parallax scrolling effect 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+*/
 
 #myimages1 {
   animation-name: jiggle;

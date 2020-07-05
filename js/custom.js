@@ -1,7 +1,3 @@
-/* Author:WebThemez
- * Author URI:http://webthemez.com
- * License: Creative Commons Attribution 3.0 License (https://creativecommons.org/licenses/by/3.0/)
- */
 
 (function($){
 	$(document).ready(function(){
